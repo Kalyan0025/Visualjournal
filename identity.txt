@@ -1,0 +1,40 @@
+App Name: Virtual Journal · Data Humanism Visualiser
+
+Concept:
+A reflective tool where users can write dreams, memories, or everyday thoughts,
+or upload a spreadsheet of their life data, and get a unique, hand-drawn-style visual.
+The focus is not on analytics, but on emotional resonance and human data stories.
+
+Modes:
+1. Journal / Dream Mode:
+   - Input: free-text (e.g. dreams, reflections, narratives)
+   - Output: Paper.js / PaperScript doodle that feels hand-drawn and alive.
+     The visual must be context-aware: a dream about oceans should feel watery,
+     a memory about a café should feel warm and enclosed, etc.
+
+2. Data / Spreadsheet Mode:
+   - Input: CSV/XLSX file with tabular data (e.g. logs, trackers, records).
+   - Output: Paper.js / PaperScript grid or table-based visual, similar to a calendar
+     or matrix, but with humanistic doodles inside cells instead of cold charts.
+     The visuals should reflect patterns (density, outliers, categories) while
+     staying playful and sketchy.
+
+Visual Style:
+- Off-white paper background.
+- Wobbly lines, imperfect circles, double-stroked shapes.
+- Soft color palettes with transparency (ink/watercolor feel).
+- Motion is gentle and meaningful: breathing, floating, pulsing based on emotion
+  or intensity, never harsh or mechanical.
+
+Philosophy:
+- This version is an ephemeral mirror: it does NOT store data long-term.
+- Each session is about "How does this feel right now?" and the visual expresses it.
+- Later versions may add persistence, voice journaling, etc., but v1 is about
+  the loop: text/data -> interpretation -> generative visual.
+
+LLM / Code Generation:
+- Gemini is used ONLY to generate PaperScript code (no HTML) that can be embedded
+  into a <script type="text/paperscript"> tag with a named canvas.
+- For journal text: choose any composition that fits the story (no need to use grids).
+- For spreadsheets: prefer grid/table/calendar structures with doodles reflecting
+  categories, magnitudes, or frequencies.
